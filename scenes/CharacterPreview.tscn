@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://xyvq41ii77nq"]
+
+[ext_resource type="Script" uid="uid://cjf0cq74dx2ul" path="res://scenes/CharacterPreview.gd" id="1_script"]
+
+[node name="CharacterPreview" type="Control" unique_id=1300680636]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 300.0
+offset_bottom = 300.0
+script = ExtResource("1_script")
+
+[node name="Tail" type="TextureRect" parent="." unique_id=366838983]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Torso" type="TextureRect" parent="." unique_id=771692789]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Clothes" type="TextureRect" parent="." unique_id=288522089]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Head" type="TextureRect" parent="." unique_id=268103324]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hair" type="TextureRect" parent="." unique_id=207876379]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hats" type="TextureRect" parent="." unique_id=1595752885]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeLeft" type="TextureRect" parent="." unique_id=1010831785]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeRight" type="TextureRect" parent="." unique_id=832181246]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 0
+expand_mode = 1
+stretch_mode = 5

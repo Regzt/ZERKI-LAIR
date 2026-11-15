@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://lhylp3tbo0a"]
+
+[ext_resource type="Script" uid="uid://bty1jrh14538k" path="res://scenes/MainMenu.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://xyvq41ii77nq" path="res://scenes/CharacterPreview.tscn" id="2_0ykhv"]
+
+[node name="MainMenu" type="Control" unique_id=523931506]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=352278942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11, 0.12, 0.17, 1)
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=576006488]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="MainVBox" type="VBoxContainer" parent="Margin" unique_id=197803952]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Margin/MainVBox" unique_id=1981401438]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "ZERKI TOWN"
+horizontal_alignment = 1
+
+[node name="HSep1" type="HSeparator" parent="Margin/MainVBox" unique_id=1851162028]
+layout_mode = 2
+
+[node name="Body" type="HBoxContainer" parent="Margin/MainVBox" unique_id=2136945546]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+
+[node name="LeftPanel" type="VBoxContainer" parent="Margin/MainVBox/Body" unique_id=1677171073]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="PreviewBox" type="AspectRatioContainer" parent="Margin/MainVBox/Body/LeftPanel" unique_id=802287841]
+custom_minimum_size = Vector2(512, 512)
+custom_maximum_size = Vector2(512, 512)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CharacterPreview" parent="Margin/MainVBox/Body/LeftPanel/PreviewBox" unique_id=1300680636 instance=ExtResource("2_0ykhv")]
+layout_mode = 2
+
+[node name="NicknameLabel" type="Label" parent="Margin/MainVBox/Body/LeftPanel" unique_id=1750708245]
+layout_mode = 2
+text = "Ник"
+
+[node name="NicknameEdit" type="LineEdit" parent="Margin/MainVBox/Body/LeftPanel" unique_id=1043006716]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+placeholder_text = "Придумай ник"
+max_length = 16
+
+[node name="CharButton" type="Button" parent="Margin/MainVBox/Body/LeftPanel" unique_id=1887081305]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Настроить персонажа"
+
+[node name="RightPanel" type="VBoxContainer" parent="Margin/MainVBox/Body" unique_id=1592072755]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="HostLabel" type="Label" parent="Margin/MainVBox/Body/RightPanel" unique_id=1439422987]
+layout_mode = 2
+text = "Создать комнату"
+
+[node name="HostButton" type="Button" parent="Margin/MainVBox/Body/RightPanel" unique_id=1167706688]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Создать"
+
+[node name="HSep2" type="HSeparator" parent="Margin/MainVBox/Body/RightPanel" unique_id=1122510871]
+layout_mode = 2
+
+[node name="JoinLabel" type="Label" parent="Margin/MainVBox/Body/RightPanel" unique_id=1378056269]
+layout_mode = 2
+text = "Подключиться"
+
+[node name="IPEdit" type="LineEdit" parent="Margin/MainVBox/Body/RightPanel" unique_id=165213811]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+placeholder_text = "IP хоста (192.168.43.1)"
+
+[node name="JoinButton" type="Button" parent="Margin/MainVBox/Body/RightPanel" unique_id=984803664]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Подключиться"
+
+[node name="Spacer" type="Control" parent="Margin/MainVBox/Body/RightPanel" unique_id=156116888]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ExitButton" type="Button" parent="Margin/MainVBox/Body/RightPanel" unique_id=742591814]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Выход"
+
+[node name="HSep3" type="HSeparator" parent="Margin/MainVBox" unique_id=1516818237]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="Margin/MainVBox" unique_id=1997583314]
+layout_mode = 2
+text = "Готов к запуску"
+horizontal_alignment = 1

@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bfpm3xf3hnm4r"]
+
+[ext_resource type="Script" uid="uid://cvfw7l1m51xll" path="res://scenes/CharacterSprite.gd" id="1_symkg"]
+[ext_resource type="Texture2D" uid="uid://ccywpgth3hx4k" path="res://assets/animateiaiaia/animated.png" id="2_o5fow"]
+
+[sub_resource type="Animation" id="Animation_symkg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_o5fow"]
+resource_name = "walk"
+length = 0.56666666
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.2, 0.3, 0.40000004),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_utyxx"]
+_data = {
+&"RESET": SubResource("Animation_symkg"),
+&"walk": SubResource("Animation_o5fow")
+}
+
+[node name="CharacterSprite" type="Node2D" unique_id=1216495942]
+script = ExtResource("1_symkg")
+
+[node name="Tail" type="Sprite2D" parent="." unique_id=707654374]
+
+[node name="Torso" type="Sprite2D" parent="." unique_id=82993968]
+texture = ExtResource("2_o5fow")
+hframes = 5
+
+[node name="Clothes" type="Sprite2D" parent="." unique_id=1457529469]
+
+[node name="Head" type="Sprite2D" parent="." unique_id=705702356]
+
+[node name="Hair" type="Sprite2D" parent="." unique_id=1041645037]
+
+[node name="Hats" type="Sprite2D" parent="." unique_id=1751802798]
+
+[node name="EyeLeft" type="Sprite2D" parent="." unique_id=601927384]
+
+[node name="EyeRight" type="Sprite2D" parent="." unique_id=1928333555]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1416392951]
+libraries/ = SubResource("AnimationLibrary_utyxx")

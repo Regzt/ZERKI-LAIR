@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://cutbxsd71kjja"]
+
+[ext_resource type="Script" uid="uid://din66pe3nfyum" path="res://scenes/CharacterCreator.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://xyvq41ii77nq" path="res://scenes/CharacterPreview.tscn" id="2_esd1d"]
+
+[node name="CharacterCreator" type="Control" unique_id=996262637]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=156292081]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11, 0.12, 0.17, 1)
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1004928773]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Margin" unique_id=70559279]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Margin/VBox" unique_id=1252105891]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Настройка персонажа"
+horizontal_alignment = 1
+
+[node name="HSep" type="HSeparator" parent="Margin/VBox" unique_id=1306220781]
+layout_mode = 2
+
+[node name="Body" type="HBoxContainer" parent="Margin/VBox" unique_id=957759995]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+
+[node name="PreviewStage" type="Control" parent="Margin/VBox/Body" unique_id=558314394]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CharacterPreview" parent="Margin/VBox/Body/PreviewStage" unique_id=1300680636 instance=ExtResource("2_esd1d")]
+layout_mode = 0
+offset_left = 113.0
+offset_top = -1.0
+offset_right = 293.0
+offset_bottom = 299.0
+
+[node name="Panel" type="VBoxContainer" parent="Margin/VBox/Body" unique_id=1082323333]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Margin/VBox/Body/Panel" unique_id=705831043]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 20.0
+theme_override_constants/scrollbar_h_separation = 3
+theme_override_constants/scrollbar_v_separation = 3
+horizontal_scroll_mode = 0
+
+[node name="OptionsVBox" type="VBoxContainer" parent="Margin/VBox/Body/Panel/ScrollContainer" unique_id=675026661]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Тело" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=2125226790]
+layout_mode = 2
+text = "Тело"
+
+[node name="BodyOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1803862914]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Голова" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1822220666]
+layout_mode = 2
+text = "Голова"
+
+[node name="HeadOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1566879769]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Глаза" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1652584127]
+layout_mode = 2
+text = "Глаза"
+
+[node name="EyesOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1008871740]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Волосы" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1467223527]
+layout_mode = 2
+text = "Волосы"
+
+[node name="HairOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1585325189]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Одежда" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1960767804]
+layout_mode = 2
+text = "Одежда"
+
+[node name="ClothesOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1484926821]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Хвост" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1418796025]
+layout_mode = 2
+text = "Хвост"
+
+[node name="TailOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=984744924]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Шляпа" type="Label" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1696051071]
+layout_mode = 2
+text = "Шляпа"
+
+[node name="HatsOption" type="OptionButton" parent="Margin/VBox/Body/Panel/ScrollContainer/OptionsVBox" unique_id=1875178017]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="Margin/VBox/Body/Panel" unique_id=1629514459]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SaveButton" type="Button" parent="Margin/VBox/Body/Panel" unique_id=1062548221]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Сохранить"
+
+[node name="BackButton" type="Button" parent="Margin/VBox/Body/Panel" unique_id=1972619604]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Назад"

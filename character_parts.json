@@ -1,0 +1,82 @@
+{
+	"body": [
+		{
+			"name": "Обычное",
+			"path": "res://assets/character/body/body_0.png",
+			"head_pos": [0.0, 0.0],
+			"eyes_pos": [0.0, -20.0],
+			"clothes_pos": [0.0, 0.0],
+			"hair_pos": [0.0, -10.0],
+			"hats_pos": [0.0, -40.0],
+			"tail_pos": [10.0, 10.0]
+		},
+		{
+			"name": "Обычноее",
+			"path": "res://assets/character/body/body_1.png",
+			"head_pos": [0.0, 0.0],
+			"eyes_pos": [0.0, -20.0],
+			"clothes_pos": [0.0, 0.0],
+			"hair_pos": [0.0, -10.0],
+			"hats_pos": [0.0, -40.0],
+			"tail_pos": [10.0, 10.0]
+		},
+		{
+			"name": "spesn",
+			"path": "res://assets/character/body/spesn.png",
+			"head_pos": [0.0, 0.0],
+			"eyes_pos": [0.0, 0.0],
+			"clothes_pos": [0.0, -5.0],
+			"hair_pos": [0.0, 0.0],
+			"hats_pos": [0.0, 6.0],
+			"tail_pos": [0.0, 0.0]
+		},
+		{
+			"name": "vine",
+			"path": "res://assets/character/body/vine.png",
+			"head_pos": [0.0, 0.0],
+			"eyes_pos": [0.0, 10.0],
+			"clothes_pos": [0.0, 0.0],
+			"hair_pos": [0.0, -20.0],
+			"hats_pos": [0.0, 0.0],
+			"tail_pos": [-15.0, 10.0]
+		},
+		{
+			"name": "Анимированный",
+			"path": "res://assets/animateiaiaia/animated.png",
+			"head_pos": [0.0, 0.0],
+			"eyes_pos": [0.0, -20.0],
+			"clothes_pos": [0.0, 0.0],
+			"hair_pos": [0.0, -10.0],
+			"hats_pos": [0.0, -40.0],
+			"tail_pos": [0.0, 0.0]
+		}
+	],
+	"clothes": [
+		{ "name": "Без Одежды", "path": "" },
+		{ "name": "Футболка", "path": "res://assets/character/clothes/0.png" },
+		{ "name": "vine_clothes", "path": "res://assets/character/clothes/vine_clothes.png" }
+	],
+	"eyes": [
+		{ "name": "Нету", "path": "" },
+		{ "name": "spesn", "path": "res://assets/character/eyes/spesn.png" },
+		{ "name": "vine", "path": "res://assets/character/eyes/eyes_vine.png" }
+	],
+	"hair": [
+		{ "name": "Лысый", "path": "" },
+		{ "name": "spesn", "path": "res://assets/character/hair/spesn.png" }
+	],
+	"hats": [
+		{ "name": "Без шляпы", "path": "" },
+		{ "name": "spesn", "path": "res://assets/character/hats/spesn.png" },
+		{ "name": "hats_vine", "path": "res://assets/character/hats/hats_vine.png" }
+	],
+	"head": [
+		{ "name": "Нету", "path": "" },
+		{ "name": "spesn", "path": "res://assets/character/head/spesn.png" },
+		{ "name": "vine", "path": "res://assets/character/head/head_vine.png" }
+	],
+	"tail": [
+		{ "name": "Без хвоста", "path": "" },
+		{ "name": "spesn", "path": "res://assets/character/tail/spesn.png" }
+	]
+}
